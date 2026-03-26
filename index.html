@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RatingBoostByVader.site</title>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  background:url('assets/bg.jpg') no-repeat center center fixed;
+  background-size:cover;
+  overflow:hidden;
+  color:white;
+}
+
+/* 🔥 HEADING */
+.heading{
+  font-size:28px;
+  font-weight:bold;
+  margin-bottom:10px;
+  text-align:center;
+
+  background:linear-gradient(90deg,#00f0ff,#ff0055,#00ff99,#00f0ff);
+  background-size:300%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:colorMove 4s linear infinite;
+
+  text-shadow:
+    0 0 10px rgba(0,255,255,0.7),
+    0 0 20px rgba(255,0,100,0.6);
+}
+
+@keyframes colorMove{
+  0%{background-position:0%}
+  100%{background-position:300%}
+}
+
+/* PARTICLES */
+#particles-js{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:0;
+}
+
+/* MAIN */
+.main{
+  position:relative;
+  z-index:2;
+  height:100vh;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+  padding-top:60px;
+}
+
+/* BUTTON */
+.btn{
+  width:270px;
+  height:50px;
+  border-radius:20px;
+  border:1px solid rgba(0,200,255,0.8);
+  background:rgba(0,170,255,0.20);
+  text-align:center;
+  line-height:50px;
+  cursor:pointer;
+  transition:.3s;
+
+  box-shadow:
+    -8px 0 20px rgba(0,170,255,0.7),
+    8px 0 20px rgba(255,0,80,0.6),
+    0 0 20px rgba(0,170,255,0.6);
+}
+
+.btn:hover{transform:scale(1.07);}
+
+/* SLIDE */
+.slide{
+  width:85%;
+  max-width:420px;
+  max-height:0;
+  overflow:hidden;
+  transition:0.5s;
+}
+.slide.active{max-height:700px;}
+
+/* BOX */
+.box{
+  background:rgba(0,170,255,0.04);
+  border:1px solid rgba(0,170,255,0.15);
+  backdrop-filter:blur(6px);
+  padding:15px;
+  border-radius:18px;
+
+  max-height:220px;
+  overflow-y:auto;
+}
+
+/* SCROLLBAR */
+.box::-webkit-scrollbar{width:4px;}
+.box::-webkit-scrollbar-thumb{
+  background:rgba(0,170,255,0.6);
+}
+
+/* TEXT */
+.intro-text{
+  white-space:pre-line;
+  line-height:1.6;
+}
+
+/* SUB BTN */
+.sub-btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  width:100%;
+  margin:8px 0;
+  padding:10px;
+  border-radius:30px;
+  background:rgba(0,170,255,0.20);
+  border:1px solid rgba(0,200,255,0.7);
+  cursor:pointer;
+
+  box-shadow:
+    -6px 0 15px rgba(0,170,255,0.6),
+    6px 0 15px rgba(255,0,80,0.5);
+}
+
+.sub-btn:hover{transform:translateX(6px);}
+
+.icon{width:22px;}
+
+.info-btn{opacity:0.7;cursor:default;box-shadow:none;}
+
+/* CLOSE BUTTON */
+.cross{
+  position:fixed;
+  top:15px;
+  right:20px;
+  font-size:22px;
+  cursor:pointer;
+  z-index:5;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<div class="main">
+
+<div class="heading">RATING BOOST BY VADER</div>
+
+<!-- INTRO -->
+<div class="btn" onclick="toggleSlide('s1')">👉ABOUT US❤️</div>
+<div id="s1" class="slide">
+  <div class="box">
+    <div class="intro-text">
+❤️WELCOME TO OUR RATING BOOST WEBSITE ❤️‍🔥
+
+👉scroll down and read all texts and our policy's
+
+👉Here you can findout about our Rating Boost available service, Payment methods,My contact,My tg channel link and reviews❤️‍🔥
+
+🔥If any account get ban through rating push the refund+free service will given to that client another account ❤️‍🔥
+
+👉But if any client account get ban for ban wave we are not responsible 🫤
+
+❤️Be Respectful Be welcome in vader Rating boost service.
+
+💥Regards:@vadersf2
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="btn" onclick="toggleSlide('s2')">💥RATING BOOST SERVICE🔥</div>
+<div id="s2" class="slide">
+  <div class="box">
+    <div class="sub-btn">🏆 100M rating -- $2</div>
+    <div class="sub-btn">🏆 250M rating -- $4</div>
+    <div class="sub-btn">🏆 500M rating -- $8</div>
+    <div class="sub-btn">🏆 700M rating -- $10</div>
+    <div class="sub-btn">🏆 1BN rating -- $14</div>
+    <div class="sub-btn">🏆 1.5BN rating -- $20</div>
+    <div class="sub-btn">🏆 2BN rating -- $25</div>
+    <div class="sub-btn">🏆 2.147BN rating(MAX LIMIT) -- $28</div>
+  </div>
+</div>
+
+<!-- PAYMENT -->
+<div class="btn" onclick="toggleSlide('s3')">💸PAYMENT OPTIONS💲</div>
+<div id="s3" class="slide">
+  <div class="box">
+    <div class="sub-btn"><img src="assets/gpay.png" class="icon"> Google Pay</div>
+    <div class="sub-btn"><img src="assets/phonepe.png" class="icon"> PhonePe</div>
+    <div class="sub-btn"><img src="assets/binance.png" class="icon"> BINANCE</div>
+    <div class="sub-btn"><img src="assets/bkash.png" class="icon"> bKash</div>
+    <div class="sub-btn"><img src="assets/nagad.png" class="icon"> Nagad</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="btn" onclick="toggleSlide('s4')">👉Contact👥</div>
+<div id="s4" class="slide">
+  <div class="box">
+    <div class="sub-btn" onclick="window.open('https://t.me/RATINGBOOSTSF2')">💥RATING BOOST TG CHANNEL💥</div>
+    <div class="sub-btn" onclick="window.open('https://t.me/vadersf2')">🔥Vader🔥</div>
+    <div class="sub-btn" onclick="window.open('https://t.me/darklegend070')">❤️‍🔥Bhai❤️‍🔥</div>
+    <div class="sub-btn" onclick="window.open('https://t.me/VoidXColdSf2')">❤️ayush❤️</div>
+
+    <div class="sub-btn info-btn">
+      👉To buy our boost service contact anyone above
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+function toggleSlide(id){
+  let el=document.getElementById(id);
+  if(el.classList.contains("active")){
+    el.classList.remove("active");
+  }else{
+    document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+    el.classList.add("active");
+  }
+}
+
+function closeAll(){
+  document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
+}
+
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 220 },
+    size: { value: 2 },
+    move: { speed: 3 },
+    line_linked: { enable: true, distance: 120 }
+  }
+});
+</script>
+
+</body>
+</html>
